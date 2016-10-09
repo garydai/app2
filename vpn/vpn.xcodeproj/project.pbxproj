@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDB8B12DC69F182C10A376CE /* libPods-vpn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE2ED6F01A8FFF0535402CF /* libPods-vpn.a */; };
+		E20CC28C1D8E7E4B0024A53C /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = E20CC28B1D8E7E4B0024A53C /* UIButton+Bootstrap.m */; };
+		E20CC2901D8E7EC50024A53C /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = E20CC28F1D8E7EC50024A53C /* UIColor+expanded.m */; };
+		E227F11D1D98F4100021248D /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F11C1D98F4100021248D /* Http.m */; };
+		E227F1211D98F45F0021248D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F1201D98F45F0021248D /* HomeViewController.m */; };
+		E227F1251D98F4930021248D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F1241D98F4930021248D /* DataManager.m */; };
+		E227F1291D98F5AA0021248D /* UserModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = E227F1281D98F5AA0021248D /* UserModel.mm */; };
+		E227F12F1D98F7150021248D /* NSData+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F12C1D98F7150021248D /* NSData+NSHash.m */; };
+		E227F1301D98F7150021248D /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F12E1D98F7150021248D /* NSString+NSHash.m */; };
+		E227F1331D990B220021248D /* MCSMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F1321D990B220021248D /* MCSMKeychainItem.m */; };
+		E227F1361D990E430021248D /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E227F1351D990E430021248D /* Auth.m */; };
+		E227F13A1D9913AC0021248D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E227F1391D9913AC0021248D /* Assets.xcassets */; };
+		E2477EE61DA8D491007ADDEE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2477EE51DA8D491007ADDEE /* StoreKit.framework */; };
+		E2477EE91DA8DB83007ADDEE /* VIPListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2477EE81DA8DB83007ADDEE /* VIPListViewController.m */; };
+		E2C7915A1D9E019C007AFD97 /* ServerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C791591D9E019C007AFD97 /* ServerModel.m */; };
+		E2C7915D1D9E463F007AFD97 /* ServerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7915C1D9E463F007AFD97 /* ServerListViewController.m */; };
+		E2E37A3D1D8E2E620043D448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A3C1D8E2E620043D448 /* main.m */; };
+		E2E37A401D8E2E620043D448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A3F1D8E2E620043D448 /* AppDelegate.m */; };
+		E2E37A431D8E2E620043D448 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A421D8E2E620043D448 /* ViewController.m */; };
+		E2E37A461D8E2E620043D448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E37A441D8E2E620043D448 /* Main.storyboard */; };
+		E2E37A491D8E2E620043D448 /* vpn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A471D8E2E620043D448 /* vpn.xcdatamodeld */; };
+		E2E37A4E1D8E2E620043D448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E37A4C1D8E2E620043D448 /* LaunchScreen.storyboard */; };
+		E2E37A591D8E2E620043D448 /* vpnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A581D8E2E620043D448 /* vpnTests.m */; };
+		E2E37A641D8E2E620043D448 /* vpnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A631D8E2E620043D448 /* vpnUITests.m */; };
+		E2E37A721D8E2EB90043D448 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E37A711D8E2EB90043D448 /* NetworkExtension.framework */; };
+		E2E37A751D8E36080043D448 /* VCIPsecVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A741D8E36080043D448 /* VCIPsecVPNManager.m */; };
+		E2E37A791D8E36450043D448 /* VCKetChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A781D8E36450043D448 /* VCKetChain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2E37A551D8E2E620043D448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E37A301D8E2E620043D448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E37A371D8E2E620043D448;
+			remoteInfo = vpn;
+		};
+		E2E37A601D8E2E620043D448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E37A301D8E2E620043D448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E37A371D8E2E620043D448;
+			remoteInfo = vpn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93E2465214F699B486F16F3B /* Pods-vpn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vpn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vpn/Pods-vpn.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE2ED6F01A8FFF0535402CF /* libPods-vpn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vpn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE934C0E68B461180C8C10A9 /* Pods-vpn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vpn.release.xcconfig"; path = "Pods/Target Support Files/Pods-vpn/Pods-vpn.release.xcconfig"; sourceTree = "<group>"; };
+		E20CC28A1D8E7E4B0024A53C /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Bootstrap.h"; path = "Category/UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		E20CC28B1D8E7E4B0024A53C /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Bootstrap.m"; path = "Category/UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		E20CC28E1D8E7EC50024A53C /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+expanded.h"; path = "Category/UIColor+expanded.h"; sourceTree = "<group>"; };
+		E20CC28F1D8E7EC50024A53C /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+expanded.m"; path = "Category/UIColor+expanded.m"; sourceTree = "<group>"; };
+		E20CC2921D8E811A0024A53C /* vpn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vpn-Prefix.pch"; sourceTree = "<group>"; };
+		E227F11B1D98F4100021248D /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Http.h; path = Utils/Http.h; sourceTree = "<group>"; };
+		E227F11C1D98F4100021248D /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Http.m; path = Utils/Http.m; sourceTree = "<group>"; };
+		E227F11F1D98F45F0021248D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Controller/HomeViewController.h; sourceTree = "<group>"; };
+		E227F1201D98F45F0021248D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Controller/HomeViewController.m; sourceTree = "<group>"; };
+		E227F1231D98F4930021248D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Managers/DataManager.h; sourceTree = "<group>"; };
+		E227F1241D98F4930021248D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Managers/DataManager.m; sourceTree = "<group>"; };
+		E227F1271D98F5AA0021248D /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserModel.h; path = Model/UserModel.h; sourceTree = "<group>"; };
+		E227F1281D98F5AA0021248D /* UserModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UserModel.mm; path = Model/UserModel.mm; sourceTree = "<group>"; };
+		E227F12B1D98F7150021248D /* NSData+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+NSHash.h"; path = "Category/NSData+NSHash.h"; sourceTree = "<group>"; };
+		E227F12C1D98F7150021248D /* NSData+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+NSHash.m"; path = "Category/NSData+NSHash.m"; sourceTree = "<group>"; };
+		E227F12D1D98F7150021248D /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NSHash.h"; path = "Category/NSString+NSHash.h"; sourceTree = "<group>"; };
+		E227F12E1D98F7150021248D /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NSHash.m"; path = "Category/NSString+NSHash.m"; sourceTree = "<group>"; };
+		E227F1311D990B220021248D /* MCSMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSMKeychainItem.h; path = Utils/MCSMKeychainItem.h; sourceTree = "<group>"; };
+		E227F1321D990B220021248D /* MCSMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSMKeychainItem.m; path = Utils/MCSMKeychainItem.m; sourceTree = "<group>"; };
+		E227F1341D990E430021248D /* Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Auth.h; path = Utils/Auth.h; sourceTree = "<group>"; };
+		E227F1351D990E430021248D /* Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Auth.m; path = Utils/Auth.m; sourceTree = "<group>"; };
+		E227F1391D9913AC0021248D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2477EE51DA8D491007ADDEE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E2477EE71DA8DB83007ADDEE /* VIPListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VIPListViewController.h; path = Controller/VIPListViewController.h; sourceTree = "<group>"; };
+		E2477EE81DA8DB83007ADDEE /* VIPListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VIPListViewController.m; path = Controller/VIPListViewController.m; sourceTree = "<group>"; };
+		E2C791581D9E019C007AFD97 /* ServerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerModel.h; path = Model/ServerModel.h; sourceTree = "<group>"; };
+		E2C791591D9E019C007AFD97 /* ServerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerModel.m; path = Model/ServerModel.m; sourceTree = "<group>"; };
+		E2C7915B1D9E463F007AFD97 /* ServerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerListViewController.h; path = Controller/ServerListViewController.h; sourceTree = "<group>"; };
+		E2C7915C1D9E463F007AFD97 /* ServerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerListViewController.m; path = Controller/ServerListViewController.m; sourceTree = "<group>"; };
+		E2E37A381D8E2E620043D448 /* vpn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vpn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E37A3C1D8E2E620043D448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2E37A3E1D8E2E620043D448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2E37A3F1D8E2E620043D448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2E37A411D8E2E620043D448 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2E37A421D8E2E620043D448 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2E37A451D8E2E620043D448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2E37A481D8E2E620043D448 /* vpn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vpn.xcdatamodel; sourceTree = "<group>"; };
+		E2E37A4D1D8E2E620043D448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2E37A4F1D8E2E620043D448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E37A541D8E2E620043D448 /* vpnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vpnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E37A581D8E2E620043D448 /* vpnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vpnTests.m; sourceTree = "<group>"; };
+		E2E37A5A1D8E2E620043D448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E37A5F1D8E2E620043D448 /* vpnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vpnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E37A631D8E2E620043D448 /* vpnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vpnUITests.m; sourceTree = "<group>"; };
+		E2E37A651D8E2E620043D448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E37A711D8E2EB90043D448 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		E2E37A731D8E36080043D448 /* VCIPsecVPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCIPsecVPNManager.h; sourceTree = "<group>"; };
+		E2E37A741D8E36080043D448 /* VCIPsecVPNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCIPsecVPNManager.m; sourceTree = "<group>"; };
+		E2E37A771D8E36450043D448 /* VCKetChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCKetChain.h; sourceTree = "<group>"; };
+		E2E37A781D8E36450043D448 /* VCKetChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCKetChain.m; sourceTree = "<group>"; };
+		E2E53D821D8E9C06001FD660 /* vpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vpn.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2E37A351D8E2E620043D448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2477EE61DA8D491007ADDEE /* StoreKit.framework in Frameworks */,
+				E2E37A721D8E2EB90043D448 /* NetworkExtension.framework in Frameworks */,
+				DDB8B12DC69F182C10A376CE /* libPods-vpn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E37A511D8E2E620043D448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E37A5C1D8E2E620043D448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57DFDFDEA20B72FB395669FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93E2465214F699B486F16F3B /* Pods-vpn.debug.xcconfig */,
+				BE934C0E68B461180C8C10A9 /* Pods-vpn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB5EF48B60F438C7ADE4708B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2477EE51DA8D491007ADDEE /* StoreKit.framework */,
+				ABE2ED6F01A8FFF0535402CF /* libPods-vpn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E20CC28D1D8E7E500024A53C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E227F12B1D98F7150021248D /* NSData+NSHash.h */,
+				E227F12C1D98F7150021248D /* NSData+NSHash.m */,
+				E227F12D1D98F7150021248D /* NSString+NSHash.h */,
+				E227F12E1D98F7150021248D /* NSString+NSHash.m */,
+				E20CC28E1D8E7EC50024A53C /* UIColor+expanded.h */,
+				E20CC28F1D8E7EC50024A53C /* UIColor+expanded.m */,
+				E20CC28A1D8E7E4B0024A53C /* UIButton+Bootstrap.h */,
+				E20CC28B1D8E7E4B0024A53C /* UIButton+Bootstrap.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		E227F11E1D98F4160021248D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E227F1311D990B220021248D /* MCSMKeychainItem.h */,
+				E227F1321D990B220021248D /* MCSMKeychainItem.m */,
+				E227F11B1D98F4100021248D /* Http.h */,
+				E227F11C1D98F4100021248D /* Http.m */,
+				E227F1341D990E430021248D /* Auth.h */,
+				E227F1351D990E430021248D /* Auth.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E227F1221D98F4630021248D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E227F11F1D98F45F0021248D /* HomeViewController.h */,
+				E227F1201D98F45F0021248D /* HomeViewController.m */,
+				E2477EE71DA8DB83007ADDEE /* VIPListViewController.h */,
+				E2477EE81DA8DB83007ADDEE /* VIPListViewController.m */,
+				E2C7915B1D9E463F007AFD97 /* ServerListViewController.h */,
+				E2C7915C1D9E463F007AFD97 /* ServerListViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E227F1261D98F4980021248D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E227F1231D98F4930021248D /* DataManager.h */,
+				E227F1241D98F4930021248D /* DataManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		E227F12A1D98F5AF0021248D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E227F1271D98F5AA0021248D /* UserModel.h */,
+				E227F1281D98F5AA0021248D /* UserModel.mm */,
+				E2C791581D9E019C007AFD97 /* ServerModel.h */,
+				E2C791591D9E019C007AFD97 /* ServerModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E2E37A2F1D8E2E620043D448 = {
+			isa = PBXGroup;
+			children = (
+				E2E37A711D8E2EB90043D448 /* NetworkExtension.framework */,
+				E2E37A3A1D8E2E620043D448 /* vpn */,
+				E2E37A571D8E2E620043D448 /* vpnTests */,
+				E2E37A621D8E2E620043D448 /* vpnUITests */,
+				E2E37A391D8E2E620043D448 /* Products */,
+				57DFDFDEA20B72FB395669FD /* Pods */,
+				AB5EF48B60F438C7ADE4708B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2E37A391D8E2E620043D448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2E37A381D8E2E620043D448 /* vpn.app */,
+				E2E37A541D8E2E620043D448 /* vpnTests.xctest */,
+				E2E37A5F1D8E2E620043D448 /* vpnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2E37A3A1D8E2E620043D448 /* vpn */ = {
+			isa = PBXGroup;
+			children = (
+				E2E53D821D8E9C06001FD660 /* vpn.entitlements */,
+				E20CC2921D8E811A0024A53C /* vpn-Prefix.pch */,
+				E2E37A3E1D8E2E620043D448 /* AppDelegate.h */,
+				E2E37A3F1D8E2E620043D448 /* AppDelegate.m */,
+				E2E37A411D8E2E620043D448 /* ViewController.h */,
+				E2E37A421D8E2E620043D448 /* ViewController.m */,
+				E227F12A1D98F5AF0021248D /* Model */,
+				E227F1261D98F4980021248D /* Managers */,
+				E227F1221D98F4630021248D /* Controller */,
+				E227F11E1D98F4160021248D /* Utils */,
+				E20CC28D1D8E7E500024A53C /* Category */,
+				E2E37A761D8E360E0043D448 /* VPNManager */,
+				E2E37A441D8E2E620043D448 /* Main.storyboard */,
+				E2E37A4C1D8E2E620043D448 /* LaunchScreen.storyboard */,
+				E2E37A4F1D8E2E620043D448 /* Info.plist */,
+				E2E37A471D8E2E620043D448 /* vpn.xcdatamodeld */,
+				E2E37A3B1D8E2E620043D448 /* Supporting Files */,
+			);
+			path = vpn;
+			sourceTree = "<group>";
+		};
+		E2E37A3B1D8E2E620043D448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E227F1391D9913AC0021248D /* Assets.xcassets */,
+				E2E37A3C1D8E2E620043D448 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2E37A571D8E2E620043D448 /* vpnTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E37A581D8E2E620043D448 /* vpnTests.m */,
+				E2E37A5A1D8E2E620043D448 /* Info.plist */,
+			);
+			path = vpnTests;
+			sourceTree = "<group>";
+		};
+		E2E37A621D8E2E620043D448 /* vpnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E37A631D8E2E620043D448 /* vpnUITests.m */,
+				E2E37A651D8E2E620043D448 /* Info.plist */,
+			);
+			path = vpnUITests;
+			sourceTree = "<group>";
+		};
+		E2E37A761D8E360E0043D448 /* VPNManager */ = {
+			isa = PBXGroup;
+			children = (
+				E2E37A731D8E36080043D448 /* VCIPsecVPNManager.h */,
+				E2E37A741D8E36080043D448 /* VCIPsecVPNManager.m */,
+				E2E37A771D8E36450043D448 /* VCKetChain.h */,
+				E2E37A781D8E36450043D448 /* VCKetChain.m */,
+			);
+			name = VPNManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2E37A371D8E2E620043D448 /* vpn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E37A681D8E2E620043D448 /* Build configuration list for PBXNativeTarget "vpn" */;
+			buildPhases = (
+				C52329250C7F1E1B9D4FA2D2 /* [CP] Check Pods Manifest.lock */,
+				E2E37A341D8E2E620043D448 /* Sources */,
+				E2E37A351D8E2E620043D448 /* Frameworks */,
+				E2E37A361D8E2E620043D448 /* Resources */,
+				DB5568CDB9BFC70CED2BB61F /* [CP] Embed Pods Frameworks */,
+				E4D0E5326B1C4A9CCF5CED16 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vpn;
+			productName = vpn;
+			productReference = E2E37A381D8E2E620043D448 /* vpn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2E37A531D8E2E620043D448 /* vpnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E37A6B1D8E2E620043D448 /* Build configuration list for PBXNativeTarget "vpnTests" */;
+			buildPhases = (
+				E2E37A501D8E2E620043D448 /* Sources */,
+				E2E37A511D8E2E620043D448 /* Frameworks */,
+				E2E37A521D8E2E620043D448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E37A561D8E2E620043D448 /* PBXTargetDependency */,
+			);
+			name = vpnTests;
+			productName = vpnTests;
+			productReference = E2E37A541D8E2E620043D448 /* vpnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2E37A5E1D8E2E620043D448 /* vpnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E37A6E1D8E2E620043D448 /* Build configuration list for PBXNativeTarget "vpnUITests" */;
+			buildPhases = (
+				E2E37A5B1D8E2E620043D448 /* Sources */,
+				E2E37A5C1D8E2E620043D448 /* Frameworks */,
+				E2E37A5D1D8E2E620043D448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E37A611D8E2E620043D448 /* PBXTargetDependency */,
+			);
+			name = vpnUITests;
+			productName = vpnUITests;
+			productReference = E2E37A5F1D8E2E620043D448 /* vpnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2E37A301D8E2E620043D448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = gaga;
+				TargetAttributes = {
+					E2E37A371D8E2E620043D448 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y58MCTDLP5;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					E2E37A531D8E2E620043D448 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E2E37A371D8E2E620043D448;
+					};
+					E2E37A5E1D8E2E620043D448 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E2E37A371D8E2E620043D448;
+					};
+				};
+			};
+			buildConfigurationList = E2E37A331D8E2E620043D448 /* Build configuration list for PBXProject "vpn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2E37A2F1D8E2E620043D448;
+			productRefGroup = E2E37A391D8E2E620043D448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2E37A371D8E2E620043D448 /* vpn */,
+				E2E37A531D8E2E620043D448 /* vpnTests */,
+				E2E37A5E1D8E2E620043D448 /* vpnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E37A361D8E2E620043D448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E37A4E1D8E2E620043D448 /* LaunchScreen.storyboard in Resources */,
+				E227F13A1D9913AC0021248D /* Assets.xcassets in Resources */,
+				E2E37A461D8E2E620043D448 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E37A521D8E2E620043D448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E37A5D1D8E2E620043D448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C52329250C7F1E1B9D4FA2D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5568CDB9BFC70CED2BB61F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vpn/Pods-vpn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D0E5326B1C4A9CCF5CED16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vpn/Pods-vpn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2E37A341D8E2E620043D448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E37A491D8E2E620043D448 /* vpn.xcdatamodeld in Sources */,
+				E2E37A791D8E36450043D448 /* VCKetChain.m in Sources */,
+				E20CC2901D8E7EC50024A53C /* UIColor+expanded.m in Sources */,
+				E227F1361D990E430021248D /* Auth.m in Sources */,
+				E227F1211D98F45F0021248D /* HomeViewController.m in Sources */,
+				E20CC28C1D8E7E4B0024A53C /* UIButton+Bootstrap.m in Sources */,
+				E2E37A431D8E2E620043D448 /* ViewController.m in Sources */,
+				E227F12F1D98F7150021248D /* NSData+NSHash.m in Sources */,
+				E2C7915A1D9E019C007AFD97 /* ServerModel.m in Sources */,
+				E227F1331D990B220021248D /* MCSMKeychainItem.m in Sources */,
+				E227F11D1D98F4100021248D /* Http.m in Sources */,
+				E2477EE91DA8DB83007ADDEE /* VIPListViewController.m in Sources */,
+				E2E37A751D8E36080043D448 /* VCIPsecVPNManager.m in Sources */,
+				E227F1291D98F5AA0021248D /* UserModel.mm in Sources */,
+				E2E37A401D8E2E620043D448 /* AppDelegate.m in Sources */,
+				E227F1251D98F4930021248D /* DataManager.m in Sources */,
+				E2C7915D1D9E463F007AFD97 /* ServerListViewController.m in Sources */,
+				E227F1301D98F7150021248D /* NSString+NSHash.m in Sources */,
+				E2E37A3D1D8E2E620043D448 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E37A501D8E2E620043D448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E37A591D8E2E620043D448 /* vpnTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E37A5B1D8E2E620043D448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E37A641D8E2E620043D448 /* vpnUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2E37A561D8E2E620043D448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E37A371D8E2E620043D448 /* vpn */;
+			targetProxy = E2E37A551D8E2E620043D448 /* PBXContainerItemProxy */;
+		};
+		E2E37A611D8E2E620043D448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E37A371D8E2E620043D448 /* vpn */;
+			targetProxy = E2E37A601D8E2E620043D448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2E37A441D8E2E620043D448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E37A451D8E2E620043D448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2E37A4C1D8E2E620043D448 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E37A4D1D8E2E620043D448 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2E37A661D8E2E620043D448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2E37A671D8E2E620043D448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2E37A691D8E2E620043D448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E2465214F699B486F16F3B /* Pods-vpn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = vpn/vpn.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = Y58MCTDLP5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/vpn/vpn-Prefix.pch";
+				INFOPLIST_FILE = vpn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = gagadai.vpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e8eda67c-c497-4572-a6a5-eb5fb4d1fd3c";
+				PROVISIONING_PROFILE_SPECIFIER = vpn_dis;
+			};
+			name = Debug;
+		};
+		E2E37A6A1D8E2E620043D448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE934C0E68B461180C8C10A9 /* Pods-vpn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = vpn/vpn.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = Y58MCTDLP5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/vpn/vpn-Prefix.pch";
+				INFOPLIST_FILE = vpn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = gagadai.vpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e8eda67c-c497-4572-a6a5-eb5fb4d1fd3c";
+				PROVISIONING_PROFILE_SPECIFIER = vpn_dis;
+			};
+			name = Release;
+		};
+		E2E37A6C1D8E2E620043D448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vpnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gaga.vpnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpn.app/vpn";
+			};
+			name = Debug;
+		};
+		E2E37A6D1D8E2E620043D448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vpnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gaga.vpnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpn.app/vpn";
+			};
+			name = Release;
+		};
+		E2E37A6F1D8E2E620043D448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = vpnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gaga.vpnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = vpn;
+			};
+			name = Debug;
+		};
+		E2E37A701D8E2E620043D448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = vpnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gaga.vpnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = vpn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2E37A331D8E2E620043D448 /* Build configuration list for PBXProject "vpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E37A661D8E2E620043D448 /* Debug */,
+				E2E37A671D8E2E620043D448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E37A681D8E2E620043D448 /* Build configuration list for PBXNativeTarget "vpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E37A691D8E2E620043D448 /* Debug */,
+				E2E37A6A1D8E2E620043D448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E37A6B1D8E2E620043D448 /* Build configuration list for PBXNativeTarget "vpnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E37A6C1D8E2E620043D448 /* Debug */,
+				E2E37A6D1D8E2E620043D448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E37A6E1D8E2E620043D448 /* Build configuration list for PBXNativeTarget "vpnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E37A6F1D8E2E620043D448 /* Debug */,
+				E2E37A701D8E2E620043D448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2E37A471D8E2E620043D448 /* vpn.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2E37A481D8E2E620043D448 /* vpn.xcdatamodel */,
+			);
+			currentVersion = E2E37A481D8E2E620043D448 /* vpn.xcdatamodel */;
+			path = vpn.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E2E37A301D8E2E620043D448 /* Project object */;
+}

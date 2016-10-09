@@ -1,0 +1,114 @@
+//
+//  AppFrame-Prefix.pch
+//  AppFrame
+//
+//  Created by 戴特长 on 15/9/21.
+//  Copyright © 2015年 Huizhe. All rights reserved.
+//
+
+#ifndef Vpn_Prefix_pch
+#define Vpn_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "UIButton+Bootstrap.h"
+#import "UserModel.h"
+#import "DataManager.h"
+#import "Http.h"
+#import "MCSMKeychainItem.h"
+#import "Auth.h"
+#import <StoreKit/StoreKit.h>
+#import "SVProgressHUD.h"
+#define API_BASE                            @"http://42.96.152.105:5000"
+#define API_OFFICAL_HOSTS                   @[@"192.168.1.10"]
+
+#define API_ADD_USER                        HttpPost(@"/adduser")
+#define API_GET_USER                        HttpPost(@"/getuser")
+#define API_GET_SERVER                      HttpPost(@"/getserver")
+//版本号
+#define kVersion_Coding [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+#define kVersionBuild_Coding [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+#define kNavHeight 64
+#define kTabHeight 49
+#define kDownViewHeight 45
+#define kDropDownMenuHeight 45
+#define kLoginPaddingLeftWidth 18
+#define kPaddingLeftWidth 15
+#define kSegmentControlHeight 44.0
+#define kSegmentControlIconHeight 70.0
+
+#define kKeyboardView_Height 216.0
+#define kMessageInputView_Height 50.0
+#define kMessageInputView_HeightMax 120.0
+#define kMessageInputView_PadingHeight 7.0
+#define kMessageInputView_Width_Tool 35.0
+#define kMessageInputView_MediaPadding 1.0
+
+#define kColor999 [UIColor colorWithHex:@"0x999999"]
+#define kColorTableBG [UIColor colorWithHex:@"0xfafafa"]
+#define kColorTableSectionBg [UIColor colorWithHex:@"0xeeeeee"]
+
+#define kImage999 [UIImage imageWithColor:kColor999]
+
+
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define  kBadgeTipStr @"badgeTip"
+
+#define kCellSelectionStyle [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0]
+
+#define COLORRGBA(c,a) [UIColor colorWithRed:((c>>16)&0xFF)/255.0	\
+                                      green:((c>>8)&0xFF)/255.0	\
+                                       blue:(c&0xFF)/255.0         \
+                                      alpha:a]
+#define COLORRGB(c)    [UIColor colorWithRed:((c>>16)&0xFF)/255.0	\
+green:((c>>8)&0xFF)/255.0	\
+blue:(c&0xFF)/255.0         \
+alpha:1.0]
+
+#define gBlueColor [UIColor colorWithHue:204/360.0f saturation:76/100.0f brightness:86/100.0f alpha:1.0]
+#define blueHalfColor [UIColor colorWithRed:((0x56abe4>>16)&0xFF)/255.0	\
+green:((0x56abe4>>8)&0xFF)/255.0	\
+blue:(0x56abe4&0xFF)/255.0         \
+alpha:0.8]
+
+#define myBlueColor [UIColor colorWithRed:((0x56abe4>>16)&0xFF)/255.0	\
+green:((0x56abe4>>8)&0xFF)/255.0	\
+blue:(0x56abe4&0xFF)/255.0         \
+alpha:1.0]
+
+
+
+#define Notification_OrderMessage  1
+#define Notification_SystemMessage 3
+#define Notification_FriendMessage 2
+#define Notification_TaskMessage   4
+#define Notification_QnaMessage   5
+
+
+#define kAppUrl  @"http://itunes.apple.com/app/id1125870151"
+#define kAppReviewURL   @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1125870151"
+
+#define ESWeak(var, weakVar) __weak __typeof(&*var) weakVar = var
+#define ESStrong_DoNotCheckNil(weakVar, _var) __typeof(&*weakVar) _var = weakVar
+#define ESStrong(weakVar, _var) ESStrong_DoNotCheckNil(weakVar, _var); if (!_var) return;
+
+#define ESWeak_(var) ESWeak(var, weak_##var);
+#define ESStrong_(var) ESStrong(weak_##var, _##var);
+
+/** defines a weak `self` named `__weakSelf` */
+#define ESWeakSelf      ESWeak(self, __weakSelf);
+/** defines a strong `self` named `_self` from `__weakSelf` */
+#define ESStrongSelf    ESStrong(__weakSelf, _self);
+
+#define md5key @"%m-&^3@2/&rJ8q.HLDVLn9{bFV;kzWec-,4DY`cV_{Cc5nOl$==y]&Nj;C6*b(oN"
+#endif /* AppFrame_Prefix_pch */
