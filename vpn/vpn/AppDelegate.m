@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+//#import "JOYConnect.h"
 @interface AppDelegate ()
 
 @end
@@ -20,11 +21,16 @@
     // Override point for customization after application launch.
      
     [Http registerPrefix:@"::" forUrl:API_BASE];
-    [self uploadUserId];
+   
     HomeViewController *vc = [[HomeViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window setRootViewController:nav];
     
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+    UMConfigInstance.appKey = @"58184a8999f0c73c1b002cc4";
+    UMConfigInstance.channelId = @"App Store";
+    [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
+   // [JOYConnect getConnect:@"bac352206632451d21e7f95317f75773" pid:@"[pid]" userID:@"[userid]"];
     return YES;
 }
 
@@ -36,7 +42,7 @@
         [SVProgressHUD show];
         [[DataManager manager] addUser:nil postParams:@{@"userid":userId} success:nil failure:^(){
         
-            [SVProgressHUD showWithStatus:@"上传用户失败"];
+            [SVProgressHUD showInfoWithStatus:@"上传用户失败"];
         }];
     }
 }

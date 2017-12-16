@@ -21,6 +21,15 @@
 		E227F13A1D9913AC0021248D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E227F1391D9913AC0021248D /* Assets.xcassets */; };
 		E2477EE61DA8D491007ADDEE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2477EE51DA8D491007ADDEE /* StoreKit.framework */; };
 		E2477EE91DA8DB83007ADDEE /* VIPListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2477EE81DA8DB83007ADDEE /* VIPListViewController.m */; };
+		E29585991DC881180051C92F /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29585981DC881180051C92F /* UMMobClick.framework */; };
+		E295859B1DC881620051C92F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E295859A1DC881620051C92F /* CoreTelephony.framework */; };
+		E295859D1DC881740051C92F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E295859C1DC881740051C92F /* libz.tbd */; };
+		E295859F1DC881820051C92F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E295859E1DC881820051C92F /* libsqlite3.tbd */; };
+		E2A3B74B1DF6A0AB0047D786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A3B74A1DF6A0AB0047D786 /* UIKit.framework */; };
+		E2A3B74D1DF6A0B70047D786 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A3B74C1DF6A0B70047D786 /* QuartzCore.framework */; };
+		E2A3B74F1DF6A0C30047D786 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A3B74E1DF6A0C30047D786 /* CoreGraphics.framework */; };
+		E2A3B7511DF6A0CC0047D786 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A3B7501DF6A0CC0047D786 /* AdSupport.framework */; };
+		E2A3B7531DF6A0D60047D786 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A3B7521DF6A0D60047D786 /* SystemConfiguration.framework */; };
 		E2C7915A1D9E019C007AFD97 /* ServerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C791591D9E019C007AFD97 /* ServerModel.m */; };
 		E2C7915D1D9E463F007AFD97 /* ServerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7915C1D9E463F007AFD97 /* ServerListViewController.m */; };
 		E2E37A3D1D8E2E620043D448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E37A3C1D8E2E620043D448 /* main.m */; };
@@ -82,6 +91,15 @@
 		E2477EE51DA8D491007ADDEE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E2477EE71DA8DB83007ADDEE /* VIPListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VIPListViewController.h; path = Controller/VIPListViewController.h; sourceTree = "<group>"; };
 		E2477EE81DA8DB83007ADDEE /* VIPListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VIPListViewController.m; path = Controller/VIPListViewController.m; sourceTree = "<group>"; };
+		E29585981DC881180051C92F /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		E295859A1DC881620051C92F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E295859C1DC881740051C92F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E295859E1DC881820051C92F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E2A3B74A1DF6A0AB0047D786 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E2A3B74C1DF6A0B70047D786 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2A3B74E1DF6A0C30047D786 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E2A3B7501DF6A0CC0047D786 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E2A3B7521DF6A0D60047D786 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E2C791581D9E019C007AFD97 /* ServerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerModel.h; path = Model/ServerModel.h; sourceTree = "<group>"; };
 		E2C791591D9E019C007AFD97 /* ServerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerModel.m; path = Model/ServerModel.m; sourceTree = "<group>"; };
 		E2C7915B1D9E463F007AFD97 /* ServerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerListViewController.h; path = Controller/ServerListViewController.h; sourceTree = "<group>"; };
@@ -115,8 +133,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A3B7531DF6A0D60047D786 /* SystemConfiguration.framework in Frameworks */,
+				E2A3B7511DF6A0CC0047D786 /* AdSupport.framework in Frameworks */,
+				E2A3B74F1DF6A0C30047D786 /* CoreGraphics.framework in Frameworks */,
+				E2A3B74D1DF6A0B70047D786 /* QuartzCore.framework in Frameworks */,
+				E2A3B74B1DF6A0AB0047D786 /* UIKit.framework in Frameworks */,
+				E295859F1DC881820051C92F /* libsqlite3.tbd in Frameworks */,
+				E295859D1DC881740051C92F /* libz.tbd in Frameworks */,
+				E295859B1DC881620051C92F /* CoreTelephony.framework in Frameworks */,
 				E2477EE61DA8D491007ADDEE /* StoreKit.framework in Frameworks */,
 				E2E37A721D8E2EB90043D448 /* NetworkExtension.framework in Frameworks */,
+				E29585991DC881180051C92F /* UMMobClick.framework in Frameworks */,
 				DDB8B12DC69F182C10A376CE /* libPods-vpn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +177,15 @@
 		AB5EF48B60F438C7ADE4708B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2A3B7521DF6A0D60047D786 /* SystemConfiguration.framework */,
+				E2A3B7501DF6A0CC0047D786 /* AdSupport.framework */,
+				E2A3B74E1DF6A0C30047D786 /* CoreGraphics.framework */,
+				E2A3B74C1DF6A0B70047D786 /* QuartzCore.framework */,
+				E2A3B74A1DF6A0AB0047D786 /* UIKit.framework */,
+				E295859E1DC881820051C92F /* libsqlite3.tbd */,
+				E295859C1DC881740051C92F /* libz.tbd */,
+				E295859A1DC881620051C92F /* CoreTelephony.framework */,
+				E29585981DC881180051C92F /* UMMobClick.framework */,
 				E2477EE51DA8D491007ADDEE /* StoreKit.framework */,
 				ABE2ED6F01A8FFF0535402CF /* libPods-vpn.a */,
 			);
@@ -373,6 +409,7 @@
 					E2E37A371D8E2E620043D448 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = Y58MCTDLP5;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -650,13 +687,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = vpn/vpn.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Techang Dai (Y58MCTDLP5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Techang Dai (Y58MCTDLP5)";
 				DEVELOPMENT_TEAM = Y58MCTDLP5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/vpn/vpn-Prefix.pch";
 				INFOPLIST_FILE = vpn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = gagadai.vpn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -671,13 +718,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = vpn/vpn.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Techang Dai (Y58MCTDLP5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Techang Dai (Y58MCTDLP5)";
 				DEVELOPMENT_TEAM = Y58MCTDLP5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/vpn/vpn-Prefix.pch";
 				INFOPLIST_FILE = vpn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = gagadai.vpn;
 				PRODUCT_NAME = "$(TARGET_NAME)";

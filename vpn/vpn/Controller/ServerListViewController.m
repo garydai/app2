@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"服务器列表";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier_list];
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = YES;
@@ -25,9 +25,14 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self getServer];
+   
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self getServer];
+}
 -(void)getServer
 {
     [SVProgressHUD show];
@@ -67,7 +72,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_list forIndexPath:indexPath];
     cell.textLabel.text = ((ServerModel*)_serverList[indexPath.row]).serverName;
-    if(_index == indexPath.row)
+    if([_serverModel.serverName isEqualToString: ((ServerModel*)_serverList[indexPath.row]).serverName])
     {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
@@ -82,7 +87,7 @@
     
     if(_selectServer)
     {
-        _selectServer(indexPath.row);
+        _selectServer((ServerModel*)_serverList[indexPath.row]);
     }
 }
 

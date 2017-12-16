@@ -34,6 +34,11 @@
     [Http request:controller api:API_ADD_USER params:params success:success fail:failure];
     
 }
+- (void )report:(UIViewController *__weak)controller postParams:(NSDictionary *)params success:(void (^)())success failure:(void (^)())failure
+{
+    [Http request:controller api:API_REPORT params:params success:success fail:failure];
+    
+}
 
 - (void )getUser:(UIViewController *__weak)controller postParams:(NSDictionary *)params success:(void (^)(UserModel *))success failure:(void (^)())failure
 {

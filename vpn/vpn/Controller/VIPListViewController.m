@@ -95,9 +95,9 @@
         NSLog(@"%@", [pro price]);
         NSLog(@"%@", [pro productIdentifier]);
         
-        if([pro.productIdentifier isEqualToString:_currentProId]){
+      //  if([pro.productIdentifier isEqualToString:_currentProId]){
             p = pro;
-        }
+        //}
     }
     
     SKPayment *payment = [SKPayment paymentWithProduct:p];
@@ -161,6 +161,10 @@
             [[NSUserDefaults standardUserDefaults] setInteger:(purchasedCount+1) forKey:productIdentifier];
         }else{
             [defaults setBool:YES forKey:productIdentifier];
+        }
+        if([productIdentifier isEqualToString:@"baoyue"])
+        {
+            
         }
         //在此处对购买记录进行存储，可以存储到开发商的服务器端
     }else{

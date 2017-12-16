@@ -231,6 +231,10 @@ static NSString* cacheFolder = nil;
                 }
                 if(success) success(responseData, operation);
             }
+            else
+            {
+                [SVProgressHUD showInfoWithStatus:@"服务器错误"];
+            }
           //  else if(message)
            // {
              //   [Utils hudShowWithText:message];
@@ -242,6 +246,8 @@ static NSString* cacheFolder = nil;
     };
     AF_FAIL_CB failCB = ^(NSURLSessionTask *operation, NSError *error) {
     //    DDLogDebug(@"Http %@ Fail %@ %@", methodStr, url, error.description);
+        //[SVProgressHUD showInfoWithStatus:@"服务器发生错误"];
+        [SVProgressHUD dismiss];
         NSString* errorCode, *message;
         NSInteger statusCode = ((NSHTTPURLResponse*)operation.response).statusCode;
         if(statusCode){

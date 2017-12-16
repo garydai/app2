@@ -23,6 +23,7 @@
 - (void )getUser:(UIViewController *__weak)controller postParams:(NSDictionary *)params success:(void (^)(UserModel *))success failure:(void (^)())failure;
 
 - (void )getServer:(UIViewController *__weak)controller postParams:(NSDictionary *)params success:(void (^)(ServerList *,UserModel *))success failure:(void (^)())failure;
+- (void )report:(UIViewController *__weak)controller postParams:(NSDictionary *)params success:(void (^)())success failure:(void (^)())failure;
 
 @end
 
